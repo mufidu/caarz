@@ -1,0 +1,29 @@
+.button {
+    &,
+    &:link,
+    &:visited {
+        @apply bg-gray-200 text-black font-semibold text-2xl p-5 rounded-3xl relative;
+        transition: all 0.4s;
+    }
+
+    &:hover {
+        outline: none;
+        transform: translateY(-0.5rem);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: translateY(-0.2rem);
+    }
+
+    &::after {
+        @apply bg-gray-200 inline-block h-full w-full absolute top-0 left-0 rounded-3xl;
+        content: "";
+        z-index: -1;
+        transition: all 0.4s;
+    }
+}

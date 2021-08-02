@@ -1,0 +1,30 @@
+.header {
+    @apply h-screen bg-cover bg-center flex flex-col justify-evenly items-center;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url(../assets/bigcar.webp);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &__logo {
+        @apply h-16 absolute top-4;
+
+        img {
+            @apply w-8 h-8;
+        }
+    }
+
+    &__text {
+        @apply h-1/6 flex flex-col justify-around text-gray-200 w-10/12;
+
+        h1 {
+            @apply text-6xl font-bold;
+        }
+
+        p {
+            @apply text-2xl mt-4;
+        }
+    }
+}
