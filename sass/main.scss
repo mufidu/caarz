@@ -3,7 +3,19 @@
 @import "tailwindcss/utilities.css";
 @import "header.scss";
 @import "button.scss";
+@import "about.scss";
+@import "typography.scss";
 
 html {
     font-family: "Source Sans Pro", sans-serif;
+    line-height: 1.7;
+}
+
+main {
+    position: relative;
+    z-index: 9;
+}
+
+*::selection {
+    @apply bg-gray-200;
 }

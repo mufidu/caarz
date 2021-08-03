@@ -2,7 +2,7 @@
     &,
     &:link,
     &:visited {
-        @apply bg-gray-200 text-black font-semibold text-2xl p-5 rounded-3xl relative;
+        @apply bg-gray-200 text-black font-semibold text-2xl p-5 rounded-xl relative;
         transition: all 0.4s;
     }
 
@@ -21,9 +21,20 @@
     }
 
     &::after {
-        @apply bg-gray-200 inline-block h-full w-full absolute top-0 left-0 rounded-3xl;
+        @apply bg-gray-200 inline-block h-full w-full absolute top-0 left-0 rounded-xl;
         content: "";
         z-index: -1;
         transition: all 0.4s;
+    }
+
+    &__text {
+        @apply text-gray-600 p-1 border-b-2 border-gray-600;
+        transition: all 0.2s;
+
+        &:hover {
+            @apply bg-gray-800 border-b-0 text-gray-200;
+            box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+            transform: translateY(-0.2rem);
+        }
     }
 }
