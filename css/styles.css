@@ -31895,6 +31895,7 @@ video {
     align-items: center;
     font-size: 1.125rem;
     line-height: 1.75rem;
+    font-weight: 500;
     --tw-text-opacity: 1;
     color: rgba(229, 231, 235, var(--tw-text-opacity));
   }
@@ -32076,6 +32077,10 @@ video {
       border-radius: 0.2rem;
     }
 
+.about__img:hover img:not(:hover) {
+      transform: scale(0.9);
+    }
+
 @media (max-width: 800px) {
   .about {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
@@ -32123,6 +32128,57 @@ h3 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
+}
+
+.features {
+  position: relative;
+  margin-top: -7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  padding-top: 11rem;
+  padding-bottom: 8rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  background-image: linear-gradient(
+            to right bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url(../assets/caarz2.webp);
+  z-index: 7;
+}
+
+.features__container {
+    display: flex;
+    width: 83.333333%;
+    justify-content: space-evenly;
+  }
+
+.features__container > div {
+      height: 20rem;
+      width: 20%;
+      border-radius: 0.25rem;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+@media (max-width: 800px) {
+  .features {
+    padding-bottom: 13rem;
+  }
+    .features__container {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+      .features__container > div {
+        width: 100%;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+      }
 }
 
 html {

@@ -1,0 +1,35 @@
+.features {
+    @apply bg-cover bg-center -mt-28 pt-44 pb-32 flex flex-col items-center justify-center relative;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url(../assets/caarz2.webp);
+    z-index: 7;
+
+    &__container {
+        @apply w-5/6  flex justify-evenly;
+
+        & > div {
+            @apply w-1/5 h-80 rounded;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .features {
+        @apply pb-52;
+
+        &__container {
+            @apply flex-col justify-evenly;
+
+            & > div {
+                @apply w-full;
+                height: max-content;
+            }
+        }
+    }
+}

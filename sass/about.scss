@@ -47,6 +47,10 @@
             outline: 0.3rem solid aliceblue;
             border-radius: 0.2rem;
         }
+
+        &:hover img:not(:hover) {
+            transform: scale(0.9);
+        }
     }
 }
 

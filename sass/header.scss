@@ -11,7 +11,7 @@
     z-index: 10;
 
     &__logo {
-        @apply flex h-12 absolute top-4 text-gray-200 items-center text-lg;
+        @apply flex h-12 absolute top-4 text-gray-200 items-center text-lg font-medium;
 
         img {
             @apply w-8 h-8 mr-2;
