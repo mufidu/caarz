@@ -1,0 +1,28 @@
+@keyframes carly {
+    0% {
+        opacity: 0.9;
+        @apply text-gray-600;
+    }
+
+    50% {
+        opacity: 1;
+        @apply text-gray-800;
+    }
+
+    100% {
+        opacity: 0.9;
+        @apply text-gray-600;
+    }
+}
+
+@keyframes heading {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}

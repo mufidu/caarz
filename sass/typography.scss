@@ -1,12 +1,32 @@
 h1 {
-    @apply text-6xl font-bold;
+    @apply text-6xl font-bold bg-clip-text text-transparent;
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(134, 128, 128),
+        white
+    );
 }
 
 h2 {
-    @apply text-4xl font-bold;
+    @apply text-4xl font-semibold text-center bg-clip-text text-transparent;
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(141, 128, 128),
+        black
+    );
     max-width: 100vw;
+    animation: heading 3.5s infinite;
 }
 
 h3 {
     @apply text-2xl font-medium;
+}
+
+.carly {
+    @apply text-gray-600 font-semibold;
+    animation: carly 3s infinite;
+}
+
+b {
+    @apply font-semibold;
 }
