@@ -3,7 +3,7 @@
     &:link,
     &:visited {
         @apply bg-gray-200 text-black font-semibold text-2xl p-5 rounded-xl relative;
-        transition: all 0.4s;
+        transition: all 0.2s;
     }
 
     &:hover {

@@ -6,29 +6,56 @@
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)
         ),
-        url(../assets/caarz2.webp);
+        url(../assets/bigcar2.webp);
     z-index: 7;
 
     &__container {
         @apply w-5/6  flex justify-evenly;
 
         & > div {
-            @apply w-1/5 h-80 rounded;
+            @apply h-80 rounded-xl flex flex-col items-center text-center;
+            width: 18%;
             background-color: rgba(255, 255, 255, 0.7);
+            transition: all 0.2s;
+            opacity: 0.9;
+            box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+
+            p {
+                @apply w-11/12 my-auto;
+            }
+
+            &:hover {
+                transform: translateY(-0.3rem) scale(1.06);
+                opacity: 1;
+                box-shadow: 0 2rem 4.5rem rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        i {
+            @apply inline-block text-5xl bg-clip-text text-transparent my-5;
+            background-image: linear-gradient(
+                to right bottom,
+                rgb(141, 128, 128),
+                black
+            );
         }
     }
 }
 
 @media (max-width: 800px) {
     .features {
-        @apply pb-52;
+        @apply mb-52;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 
         &__container {
-            @apply flex-col justify-evenly;
+            @apply flex-col justify-evenly w-8/12;
 
             & > div {
                 @apply w-full;
-                height: max-content;
+            }
+
+            div:not(:last-child) {
+                @apply mb-6;
             }
         }
     }
