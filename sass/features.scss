@@ -10,7 +10,7 @@
     z-index: 7;
 
     &__container {
-        @apply w-5/6  flex justify-evenly;
+        @apply w-5/6 flex justify-evenly;
 
         & > div {
             @apply h-80 rounded-xl flex flex-col items-center text-center;
@@ -32,7 +32,7 @@
         }
 
         i {
-            @apply inline-block text-5xl bg-clip-text text-transparent my-5;
+            @apply inline-block text-5xl bg-clip-text text-transparent my-7;
             background-image: linear-gradient(
                 to right bottom,
                 rgb(141, 128, 128),
@@ -44,8 +44,7 @@
 
 @media (max-width: 800px) {
     .features {
-        @apply mb-52;
-        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 
         &__container {
             @apply flex-col justify-evenly w-8/12;
@@ -56,6 +55,10 @@
 
             div:not(:last-child) {
                 @apply mb-6;
+            }
+
+            i {
+                @apply mt-7;
             }
         }
     }
